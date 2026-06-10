@@ -35,7 +35,12 @@ HEADERS = {
 def fetch_and_save_raw(url, index):
     """Fetches HTML from a URL and saves it to the raw directory."""
     try:
-        response = requests.get(url, headers=HEADERS, timeout=10)
+        scrappable_url = url
+        if "reddit.com" in url and "old.reddit.com" not in url:
+            scrappable_url = url.replace("www.reddit.com", "old.reddit.com")
+
+        response = requests.get(scrappable_url, headers=HEADERS, timeout=10)
+        # response = requests.get(url, headers=HEADERS, timeout=10)
         response.raise_for_status()
         
         file_path = os.path.join(RAW_DIR, f"doc_{index}_raw.html")
@@ -61,9 +66,22 @@ def clean_html_content(html_content):
     text = soup.get_text(separator=' ')
     
     # Clean up whitespace and leftover HTML entities
-    text = re.sub(r'\s+', ' ', text)  # Replace multiple spaces/newlines with a single space
+    # text = re.sub(r'\s+', ' ', text)  # Replace multiple spaces/newlines with a single space
+    # # text = text.replace('&amp;', '&').replace('&nbsp;', ' ')
     # text = text.replace('&amp;', '&').replace('&nbsp;', ' ')
+    # REPLACE WITH THIS (Adds a regex to wipe compressed code/base64 strings):
+    # Clean up whitespace and leftover HTML entities
     text = text.replace('&amp;', '&').replace('&nbsp;', ' ')
+
+    # Remove long continuous blocks of character junk (CSS / Base64 strings)
+    # This matches any sequence of non-whitespace characters longer than 60 characters
+    text = re.sub(r'\S{60,}', '', text)
+
+    # Wipe out common WordPress block editor terms often left behind
+    text = re.sub(r'(\.tb-grid|\.wp-block|\.block-editor)[^{]*{[^}]*}', '', text)
+
+    # Final sweep to compress all multiple whitespaces into single spaces
+    text = re.sub(r'\s+', ' ', text)
 
     # Drop-in boilerplate phrase cleaner
     boilerplate_phrases = [
