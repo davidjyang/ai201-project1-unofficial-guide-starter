@@ -125,7 +125,6 @@ The url (since all docs are sourced from currently online pages) is given for ea
 |---|----------|-----------------|------------------------------|-------------------|-------------------|
 | 1 | Who are the department chairs of the Undergraduate Neuroscience Interdepartmental Program? | Dr. Emily White is the chair, and Dr. Stephanie Leal is the Vice Chair. | Not enough information - only has info on the various chairs of subdepartments of the group.| Partially relevant | Accurate|
 | 2 | What are the core upper division major requirements?| Neuro M101A/B/C, Neuro 102, Chem 153A?| The core upper division major requirements for the Neuroscience major consist of 5 courses: 
-
 1. Neuroscience M101A (Fall Quarter Only) 
 2. Neuroscience M101B (Winter Quarter Only) 
 3. Neuroscience M101C (Spring Quarter Only) 
