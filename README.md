@@ -125,7 +125,7 @@ The url (since all docs are sourced from currently online pages) is given for ea
 |---|----------|-----------------|------------------------------|-------------------|-------------------|
 | 1 | Who are the department chairs of the Undergraduate Neuroscience Interdepartmental Program? | Dr. Emily White is the chair, and Dr. Stephanie Leal is the Vice Chair. | Not enough information - only has info on the various chairs of subdepartments of the group.| Partially relevant | Accurate|
 | 2 | What are the core upper division major requirements?| Neuro M101A/B/C, Neuro 102, Chem 153A?| The core upper division major requirements for the Neuroscience major consist of 5 courses:  Neuroscience M101A (Fall Quarter Only), Neuroscience M101B (Winter Quarter Only), Neuroscience M101C (Spring Quarter Only), Neuroscience 102 (Fall Quarter or Summer), Chemistry and Biochemistry (CHEM) 153A.| Relevant | Accurate|
-| 3 | What rating does Professor White have for NEUROSC M101A?| 2.6| Not enough information for NEUROSC M101A, but Professor White has an overall rating of 2.7.| Relevant | Partially accurate|
+| 3 | What rating does Professor White have for NEUROSC M101A?| 2.6| Not enough information for NEUROSC M101A| Relevant | Inaccurate|
 | 4 | What is the minimum GPA for students to declare the Neuroscience minor?| 2.0 GPA overall, 2.5 in the prerequisite courses to M101A | To declare the Neuroscience minor, students must have an overall 2.0 GPA or better and a minimum 2.5 GPA in the prerequisite courses to Neuroscience M101A and M101B. | Relevant | Accurate |
 | 5 | Where is successful completion of the minor indicated?| On the transcript and the diploma. | Successful completion of the minor is indicated on the transcript and diploma. | Relevant | Accurate |
 
