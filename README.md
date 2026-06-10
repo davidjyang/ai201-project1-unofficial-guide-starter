@@ -12,7 +12,11 @@
 <!-- What topic or category of knowledge does your system cover?
      Why is this knowledge valuable, and why is it hard to find through official channels?
      Example: "Student reviews of CS professors at [university] — useful because official
-     course descriptions don't reflect teaching style, exam difficulty, or workload." -->
+     course descriptions don't reflect teaching style, exam difficulty, or workload." 
+     
+     I want to tackle the experience of neuroscience majors at UCLA - useful because despite the school size, the neuroscience department doesn't have it's own dedicated undergrad department and is run by a larger interdepartmental group. As a result, information can feel scattered.
+     
+     -->
 
 ---
 
@@ -24,16 +28,16 @@
 
 | # | Source | Type | URL or file path |
 |---|--------|------|-----------------|
-| 1 | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
-| 5 | | | |
-| 6 | | | |
-| 7 | | | |
-| 8 | | | |
-| 9 | | | |
-| 10 | | | |
+| 1 | reddit | forum post| https://www.reddit.com/r/ucla/comments/heshap/a_little_neuroscience_advice/|
+| 2 | reddit | forum post | https://www.reddit.com/r/ucla/comments/1tx4w7h/recommended_first_quarter_freshman_classes_for/|
+| 3 | reddit | forum post | https://www.reddit.com/r/ucla/comments/1siadcz/ucla_neuro_students_how_is_it/ |
+| 4 | ucla neuro dep website | list of profs| https://www.neurosci.ucla.edu/faculty/|
+| 5 | ucla neuro dep website | reqs page | https://www.neurosci.ucla.edu/program/major-requirements/|
+| 6 | ucla neuro dep website | reqs page | https://www.neurosci.ucla.edu/program/minor-requirements/|
+| 7 | ucla neuro dep website | reqs page | https://www.neurosci.ucla.edu/program/major-capstone/ |
+| 8 | bruinwalk | prof review | https://www.bruinwalk.com/professors/natik-piri/all/ |
+| 9 | bruinwalk | prof review | https://www.bruinwalk.com/professors/william-grisham/|
+| 10 | bruinwalk | prof review | https://www.bruinwalk.com/professors/stephanie-a-white/ |
 
 ---
 
