@@ -62,7 +62,21 @@ def clean_html_content(html_content):
     
     # Clean up whitespace and leftover HTML entities
     text = re.sub(r'\s+', ' ', text)  # Replace multiple spaces/newlines with a single space
+    # text = text.replace('&amp;', '&').replace('&nbsp;', ' ')
     text = text.replace('&amp;', '&').replace('&nbsp;', ' ')
+
+    # Drop-in boilerplate phrase cleaner
+    boilerplate_phrases = [
+        "Skip to Main Content", 
+        "Skip to content",
+        "Main Navigation",
+        "Toggle navigation"
+    ]
+    for phrase in boilerplate_phrases:
+        text = re.sub(re.escape(phrase), "", text, flags=re.IGNORECASE)
+
+    # Clean up any resulting double-spaces again
+    text = re.sub(r'\s+', ' ', text).strip()
     
     return text.strip()
 
